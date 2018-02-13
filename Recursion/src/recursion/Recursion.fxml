@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.layout.BorderPane?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="727.0" prefWidth="1030.0" style="-fx-background-image: url(&quot;file:src/Recursion/WesternBackground.png&quot;);" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="recursion.RecursionController">
+   <top>
+      <MenuBar fx:id="mainMenu" BorderPane.alignment="CENTER">
+        <menus>
+          <Menu mnemonicParsing="false" text="File">
+            <items>
+              <MenuItem mnemonicParsing="false" onAction="#exit" text="Close" />
+            </items>
+          </Menu>
+            <Menu mnemonicParsing="false" text="Count">
+               <items>
+                  <MenuItem mnemonicParsing="false" onAction="#testCount" text="Testing Count" />
+               </items></Menu>
+          <Menu mnemonicParsing="false" text="String Replace">
+               <items>
+                  <MenuItem mnemonicParsing="false" onAction="#testStringReplace" text="Test Replace" />
+               </items></Menu>
+          <Menu mnemonicParsing="false" text="Recursion Factorial">
+               <items>
+                  <MenuItem mnemonicParsing="false" onAction="#testRecursionFactorial" text="Test Recursion Factorial" />
+               </items></Menu>
+            <Menu mnemonicParsing="false" text="Recursion Fibonacci">
+               <items>
+                  <MenuItem mnemonicParsing="false" onAction="#testBetterFibonacci" text="Test Better Fibonacci" />
+                  <MenuItem mnemonicParsing="false" onAction="#testTailRecursiveFibonacci" text="Test Tail Recursive Fibonacci" />
+               </items></Menu>
+            <Menu mnemonicParsing="false" text="Timing Fibonacci">
+               <items>
+                  <MenuItem mnemonicParsing="false" onAction="#testTimeBaseFibonacci" text="Test Time Basic Recursion" />
+                  <MenuItem mnemonicParsing="false" onAction="#testTimeBetterFibonacci" text="Test Time Better Recursion" />
+               </items></Menu>
+        </menus>
+      </MenuBar>
+   </top>
+</BorderPane>

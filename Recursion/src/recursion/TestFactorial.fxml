@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+
+<AnchorPane id="AnchorPane" prefHeight="372.0" prefWidth="928.0" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="recursion.TestFactorialController">
+   <children>
+      <GridPane prefHeight="372.0" prefWidth="935.0">
+         <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="558.0" minWidth="10.0" prefWidth="516.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="516.0" minWidth="10.0" prefWidth="516.0" />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints maxHeight="51.0" minHeight="10.0" prefHeight="51.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="305.0" minHeight="10.0" prefHeight="274.0" vgrow="SOMETIMES" />
+         </rowConstraints>
+         <children>
+            <TextArea fx:id="testTrialWindow" editable="false" prefHeight="305.0" prefWidth="523.0" GridPane.rowIndex="1" />
+            <TextArea fx:id="testBasicWindow" editable="false" prefHeight="305.0" prefWidth="447.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <Button fx:id="testTrailBtn" alignment="CENTER_RIGHT" contentDisplay="RIGHT" mnemonicParsing="false" nodeOrientation="LEFT_TO_RIGHT" onAction="#testTrailBtnClicked" text="Test Trail Recursive Factorial" GridPane.halignment="CENTER" />
+            <Button fx:id="testBasicBtn" alignment="CENTER_RIGHT" contentDisplay="RIGHT" mnemonicParsing="false" nodeOrientation="LEFT_TO_RIGHT" onAction="#testBasicBtnClicked" text="Test Basic Recursive Factorial" GridPane.columnIndex="1" GridPane.halignment="CENTER" />
+         </children>
+      </GridPane>
+   </children>
+</AnchorPane>
