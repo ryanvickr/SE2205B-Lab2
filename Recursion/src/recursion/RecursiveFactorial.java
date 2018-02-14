@@ -12,11 +12,11 @@ public class RecursiveFactorial
     public long basic(long n)
     {
         if (n < 0)
-            return 0;
+            return 0; //if given negative integer
         else if (n <= 1)
-            return 1;
+            return 1; //base case
         else
-            return n*basic(n-1);
+            return n*basic(n-1); //recursive portion
     }
     
     
@@ -30,7 +30,7 @@ public class RecursiveFactorial
     public long tailRecursive(long n)
     {
         if (n < 0)
-            return 0;
+            return 0; //if given negative integer
         else
             return helper(n,1);
     }
@@ -48,9 +48,9 @@ public class RecursiveFactorial
         long result = 0;
         
         if (n == 0)
-            result = partial;
+            result = partial; //base case
         else{
-            return helper(n-1,n*partial);
+            return helper(n-1,n*partial); //recursive portion
         }
       
         return result;
